@@ -13,3 +13,7 @@ dependencies {
     compile 'org.codehaus.groovy:groovy-all:2.3.11'
     testCompile group: 'junit', name: 'junit', version: '4.12'
 }
+
+hello.doLast {
+    println "- The weight of my species in summer is twice as heavy as all human beings."
+}
