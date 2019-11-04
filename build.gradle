@@ -27,13 +27,45 @@ subprojects {
         doLast {
             println "- I depends on gradle-for-dummies"
         }
+        afterEvaluate { Project project ->
+            if (project.arctic) {
+                doLast {
+                    println '- I love to spend time in the arctic waters'
+                }
+            }
+        }
     }
 }
 
-configure(subprojects.findAll{it.name != 'tropicalFish'}) {
-    hello {
-        doLast {
-            println '- I love to spend time in the arctic waters'
+project(':bluewhale') {
+    sourceSets {
+        main {
+            java {
+                srcDir '../src'
+                include 'bluewhale/**'
+            }
+        }
+    }
+}
+
+project(':krill') {
+    sourceSets {
+        main {
+            java {
+                srcDir '../src'
+                include 'krill/**'
+            }
+        }
+    }
+}
+
+project(':tropicalFish') {
+    sourceSets {
+        main {
+            java {
+                srcDir '../src'
+                include 'tropicalFish/**'
+            }
         }
     }
 }
