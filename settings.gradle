@@ -1,2 +1,4 @@
 rootProject.name = 'gradle-for-dummies'
+include 'bluewhale'
+include 'krill'
 
