@@ -36,36 +36,3 @@ subprojects {
         }
     }
 }
-
-project(':bluewhale') {
-    sourceSets {
-        main {
-            java {
-                srcDir '../src'
-                include 'bluewhale/**'
-            }
-        }
-    }
-}
-
-project(':krill') {
-    sourceSets {
-        main {
-            java {
-                srcDir '../src'
-                include 'krill/**'
-            }
-        }
-    }
-}
-
-project(':tropicalFish') {
-    sourceSets {
-        main {
-            java {
-                srcDir '../src'
-                include 'tropicalFish/**'
-            }
-        }
-    }
-}
